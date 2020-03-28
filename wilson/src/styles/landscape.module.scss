@@ -1,0 +1,24 @@
+.navBar {
+    background-color: #fe0000;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    text-decoration: none;
+  }
+
+  .navBar a {
+    color: #000000;
+  }
+
+  .background {
+    position: absolute;
+    top: 64px;
+    z-index: -1;
+    background-color: #008001;
+    height: calc(100vh - 64px);
+    width: 100%;
+  }
