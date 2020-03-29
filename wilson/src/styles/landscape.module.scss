@@ -1,5 +1,5 @@
 .navBar {
-  background-color: #fe0000;
+  background-color: white;
   height: 20%;
   width: 100%;
   z-index: 10;
@@ -8,7 +8,7 @@
 
 .navBarLinks {
   height: 64px;
-  background-color: #fe0000;
+  background-color: #cab6b6;
   width: 100%;
   position: fixed;
   display: flex;
@@ -16,26 +16,26 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .navBarLinks a {
-  color: #000000;
+  color: whitesmoke;
+  background-color: red;
+  border: 4px solid black;
   text-decoration: none;
-  background-color: lightgreen;
-  border: 4px solid darkgreen;
   border-radius: 10px;
   padding: 10%;
 }
 
 .navBarLinks a:hover {
-  color: lightgreen;
+  color: white;
   background-color: black;
+  border: 4px solid red;
 }
 
 .background {
   position: absolute;
   top: 64px;
   z-index: -1;
-  background-color: #008001;
+  background-color: white;
   height: calc(100vh - 64px);
   width: 100%;
 }
@@ -45,4 +45,8 @@
   height: 80%;
   width: 80%;
   margin: auto;
+}
+
+.lorem {
+  font-size: 18px;
 }
