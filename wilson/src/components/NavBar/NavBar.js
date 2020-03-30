@@ -15,6 +15,9 @@ export default function NavBar() {
           <Link to="/">About</Link>
         </div>
         <div className={landscape.navDiv}>
+          <Link to="/services">Services</Link>
+        </div>
+        <div className={landscape.navDiv}>
           <Link to="/portfolio">Portfolio</Link>
         </div>
         <div className={landscape.navDiv}>
