@@ -1,6 +1,6 @@
 .navBar {
-  background-color: white;
-  height: 20%;
+  background-color: #0a0e0f;
+  height: 150px;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -8,7 +8,7 @@
 
 .navBarLinks {
   height: 64px;
-  background-color: #cab6b6;
+  background-color: #0a0e0f;
   width: 100%;
   position: fixed;
   display: flex;
@@ -18,8 +18,8 @@
 }
 .navBarLinks a {
   color: whitesmoke;
-  background-color: red;
-  border: 4px solid black;
+  background-color: #ee3135;
+  border: 4px solid #ee3135;
   text-decoration: none;
   border-radius: 10px;
   padding: 10%;
@@ -27,23 +27,23 @@
 
 .navBarLinks a:hover {
   color: white;
-  background-color: black;
-  border: 4px solid red;
+  background-color: #0a0e0f;
+  border: 4px solid #ee3135;
 }
 
 .background {
   position: absolute;
-  top: 64px;
+  top: 214px;
   z-index: -1;
   background-color: white;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 214px);
   width: 100%;
 }
 
 .headImage {
   display: block;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 50%;
   margin: auto;
 }
 
