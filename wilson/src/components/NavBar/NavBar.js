@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import landscape from "../../styles/landscape.module.scss";
 
 export default function NavBar() {
@@ -12,16 +12,24 @@ export default function NavBar() {
       />
       <div className={landscape.navBarLinks}>
         <div className={landscape.navDiv}>
-          <Link to="/">About</Link>
+          <NavLink exact to="/" activeStyle={{ color: "yellow" }}>
+            About
+          </NavLink>
         </div>
         <div className={landscape.navDiv}>
-          <Link to="/services">Services</Link>
+          <NavLink to="/services" activeStyle={{ color: "yellow" }}>
+            Services
+          </NavLink>
         </div>
         <div className={landscape.navDiv}>
-          <Link to="/portfolio">Portfolio</Link>
+          <NavLink to="/portfolio" activeStyle={{ color: "yellow" }}>
+            Portfolio
+          </NavLink>
         </div>
         <div className={landscape.navDiv}>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact" activeStyle={{ color: "yellow" }}>
+            Contact
+          </NavLink>
         </div>
       </div>
     </div>
