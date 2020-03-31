@@ -81,6 +81,10 @@
   width: 300px;
   height: 300px;
   margin: 1%;
+  @media screen and (max-width: 350px) {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .header {
@@ -88,4 +92,5 @@
   font-weight: bolder;
   user-select: none;
   font-size: 2rem;
+  text-align: center;
 }
