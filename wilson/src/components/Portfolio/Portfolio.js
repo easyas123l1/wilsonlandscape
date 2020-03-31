@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <div className={landscape.background}>
       <div className={landscape.contextDiv}>
-        <h1 className={landscape.header}>Wilson Landscape Portfolio</h1>
+        <h1 className={landscape.header}>Wilson Landscape Portfolio M</h1>
         <div className={landscape.portfolio}>
           <img src="./images/image (1).jpg" alt="wilson landscape work" />
           <img src="./images/image (2).jpg" alt="wilson landscape work" />
