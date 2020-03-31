@@ -1,197 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import landscape from "../../styles/landscape.module.scss";
+import ImageCard from "./ImageCard";
 
 export default function Portfolio() {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    if (images.length === 0) {
+      let newArray = [];
+      for (let i = 1; i < 186; i++) {
+        newArray.push(i);
+      }
+      setImages(newArray);
+    }
+  }, [images.length]);
+
   return (
     <div className={landscape.background}>
       <div className={landscape.contextDiv}>
         <h1 className={landscape.header}>Wilson Landscape Portfolio</h1>
         <div className={landscape.portfolio}>
-          <img src="./images/image (1).jpg" alt="wilson landscape work" />
-          <img src="./images/image (2).jpg" alt="wilson landscape work" />
-          <img src="./images/image (3).jpg" alt="wilson landscape work" />
-          <img src="./images/image (4).jpg" alt="wilson landscape work" />
-          <img src="./images/image (5).jpg" alt="wilson landscape work" />
-          <img src="./images/image (6).jpg" alt="wilson landscape work" />
-          <img src="./images/image (7).jpg" alt="wilson landscape work" />
-          <img src="./images/image (8).jpg" alt="wilson landscape work" />
-          <img src="./images/image (9).jpg" alt="wilson landscape work" />
-          <img src="./images/image (10).jpg" alt="wilson landscape work" />
-          <img src="./images/image (11).jpg" alt="wilson landscape work" />
-          <img src="./images/image (12).jpg" alt="wilson landscape work" />
-          <img src="./images/image (13).jpg" alt="wilson landscape work" />
-          <img src="./images/image (14).jpg" alt="wilson landscape work" />
-          <img src="./images/image (15).jpg" alt="wilson landscape work" />
-          <img src="./images/image (16).jpg" alt="wilson landscape work" />
-          <img src="./images/image (17).jpg" alt="wilson landscape work" />
-          <img src="./images/image (18).jpg" alt="wilson landscape work" />
-          <img src="./images/image (19).jpg" alt="wilson landscape work" />
-          <img src="./images/image (20).jpg" alt="wilson landscape work" />
-          <img src="./images/image (21).jpg" alt="wilson landscape work" />
-          <img src="./images/image (22).jpg" alt="wilson landscape work" />
-          <img src="./images/image (23).jpg" alt="wilson landscape work" />
-          <img src="./images/image (24).jpg" alt="wilson landscape work" />
-          <img src="./images/image (25).jpg" alt="wilson landscape work" />
-          <img src="./images/image (26).jpg" alt="wilson landscape work" />
-          <img src="./images/image (27).jpg" alt="wilson landscape work" />
-          <img src="./images/image (28).jpg" alt="wilson landscape work" />
-          <img src="./images/image (29).jpg" alt="wilson landscape work" />
-          <img src="./images/image (30).jpg" alt="wilson landscape work" />
-          <img src="./images/image (31).jpg" alt="wilson landscape work" />
-          <img src="./images/image (32).jpg" alt="wilson landscape work" />
-          <img src="./images/image (33).jpg" alt="wilson landscape work" />
-          <img src="./images/image (34).jpg" alt="wilson landscape work" />
-          <img src="./images/image (35).jpg" alt="wilson landscape work" />
-          <img src="./images/image (36).jpg" alt="wilson landscape work" />
-          <img src="./images/image (37).jpg" alt="wilson landscape work" />
-          <img src="./images/image (38).jpg" alt="wilson landscape work" />
-          <img src="./images/image (39).jpg" alt="wilson landscape work" />
-          <img src="./images/image (40).jpg" alt="wilson landscape work" />
-          <img src="./images/image (41).jpg" alt="wilson landscape work" />
-          <img src="./images/image (42).jpg" alt="wilson landscape work" />
-          <img src="./images/image (43).jpg" alt="wilson landscape work" />
-          <img src="./images/image (44).jpg" alt="wilson landscape work" />
-          <img src="./images/image (45).jpg" alt="wilson landscape work" />
-          <img src="./images/image (46).jpg" alt="wilson landscape work" />
-          <img src="./images/image (47).jpg" alt="wilson landscape work" />
-          <img src="./images/image (48).jpg" alt="wilson landscape work" />
-          <img src="./images/image (49).jpg" alt="wilson landscape work" />
-          <img src="./images/image (50).jpg" alt="wilson landscape work" />
-          <img src="./images/image (51).jpg" alt="wilson landscape work" />
-          <img src="./images/image (52).jpg" alt="wilson landscape work" />
-          <img src="./images/image (53).jpg" alt="wilson landscape work" />
-          <img src="./images/image (54).jpg" alt="wilson landscape work" />
-          <img src="./images/image (55).jpg" alt="wilson landscape work" />
-          <img src="./images/image (56).jpg" alt="wilson landscape work" />
-          <img src="./images/image (57).jpg" alt="wilson landscape work" />
-          <img src="./images/image (58).jpg" alt="wilson landscape work" />
-          <img src="./images/image (59).jpg" alt="wilson landscape work" />
-          <img src="./images/image (60).jpg" alt="wilson landscape work" />
-          <img src="./images/image (61).jpg" alt="wilson landscape work" />
-          <img src="./images/image (62).jpg" alt="wilson landscape work" />
-          <img src="./images/image (63).jpg" alt="wilson landscape work" />
-          <img src="./images/image (64).jpg" alt="wilson landscape work" />
-          <img src="./images/image (65).jpg" alt="wilson landscape work" />
-          <img src="./images/image (66).jpg" alt="wilson landscape work" />
-          <img src="./images/image (67).jpg" alt="wilson landscape work" />
-          <img src="./images/image (68).jpg" alt="wilson landscape work" />
-          <img src="./images/image (69).jpg" alt="wilson landscape work" />
-          <img src="./images/image (70).jpg" alt="wilson landscape work" />
-          <img src="./images/image (71).jpg" alt="wilson landscape work" />
-          <img src="./images/image (72).jpg" alt="wilson landscape work" />
-          <img src="./images/image (73).jpg" alt="wilson landscape work" />
-          <img src="./images/image (74).jpg" alt="wilson landscape work" />
-          <img src="./images/image (75).jpg" alt="wilson landscape work" />
-          <img src="./images/image (76).jpg" alt="wilson landscape work" />
-          <img src="./images/image (77).jpg" alt="wilson landscape work" />
-          <img src="./images/image (78).jpg" alt="wilson landscape work" />
-          <img src="./images/image (79).jpg" alt="wilson landscape work" />
-          <img src="./images/image (80).jpg" alt="wilson landscape work" />
-          <img src="./images/image (81).jpg" alt="wilson landscape work" />
-          <img src="./images/image (82).jpg" alt="wilson landscape work" />
-          <img src="./images/image (83).jpg" alt="wilson landscape work" />
-          <img src="./images/image (84).jpg" alt="wilson landscape work" />
-          <img src="./images/image (85).jpg" alt="wilson landscape work" />
-          <img src="./images/image (86).jpg" alt="wilson landscape work" />
-          <img src="./images/image (87).jpg" alt="wilson landscape work" />
-          <img src="./images/image (88).jpg" alt="wilson landscape work" />
-          <img src="./images/image (89).jpg" alt="wilson landscape work" />
-          <img src="./images/image (90).jpg" alt="wilson landscape work" />
-          <img src="./images/image (91).jpg" alt="wilson landscape work" />
-          <img src="./images/image (92).jpg" alt="wilson landscape work" />
-          <img src="./images/image (93).jpg" alt="wilson landscape work" />
-          <img src="./images/image (94).jpg" alt="wilson landscape work" />
-          <img src="./images/image (95).jpg" alt="wilson landscape work" />
-          <img src="./images/image (96).jpg" alt="wilson landscape work" />
-          <img src="./images/image (97).jpg" alt="wilson landscape work" />
-          <img src="./images/image (98).jpg" alt="wilson landscape work" />
-          <img src="./images/image (99).jpg" alt="wilson landscape work" />
-          <img src="./images/image (100).jpg" alt="wilson landscape work" />
-          <img src="./images/image (101).jpg" alt="wilson landscape work" />
-          <img src="./images/image (102).jpg" alt="wilson landscape work" />
-          <img src="./images/image (103).jpg" alt="wilson landscape work" />
-          <img src="./images/image (104).jpg" alt="wilson landscape work" />
-          <img src="./images/image (105).jpg" alt="wilson landscape work" />
-          <img src="./images/image (106).jpg" alt="wilson landscape work" />
-          <img src="./images/image (107).jpg" alt="wilson landscape work" />
-          <img src="./images/image (108).jpg" alt="wilson landscape work" />
-          <img src="./images/image (109).jpg" alt="wilson landscape work" />
-          <img src="./images/image (110).jpg" alt="wilson landscape work" />
-          <img src="./images/image (111).jpg" alt="wilson landscape work" />
-          <img src="./images/image (112).jpg" alt="wilson landscape work" />
-          <img src="./images/image (113).jpg" alt="wilson landscape work" />
-          <img src="./images/image (114).jpg" alt="wilson landscape work" />
-          <img src="./images/image (115).jpg" alt="wilson landscape work" />
-          <img src="./images/image (116).jpg" alt="wilson landscape work" />
-          <img src="./images/image (117).jpg" alt="wilson landscape work" />
-          <img src="./images/image (118).jpg" alt="wilson landscape work" />
-          <img src="./images/image (119).jpg" alt="wilson landscape work" />
-          <img src="./images/image (120).jpg" alt="wilson landscape work" />
-          <img src="./images/image (121).jpg" alt="wilson landscape work" />
-          <img src="./images/image (122).jpg" alt="wilson landscape work" />
-          <img src="./images/image (123).jpg" alt="wilson landscape work" />
-          <img src="./images/image (124).jpg" alt="wilson landscape work" />
-          <img src="./images/image (125).jpg" alt="wilson landscape work" />
-          <img src="./images/image (126).jpg" alt="wilson landscape work" />
-          <img src="./images/image (127).jpg" alt="wilson landscape work" />
-          <img src="./images/image (128).jpg" alt="wilson landscape work" />
-          <img src="./images/image (129).jpg" alt="wilson landscape work" />
-          <img src="./images/image (130).jpg" alt="wilson landscape work" />
-          <img src="./images/image (131).jpg" alt="wilson landscape work" />
-          <img src="./images/image (132).jpg" alt="wilson landscape work" />
-          <img src="./images/image (133).jpg" alt="wilson landscape work" />
-          <img src="./images/image (134).jpg" alt="wilson landscape work" />
-          <img src="./images/image (135).jpg" alt="wilson landscape work" />
-          <img src="./images/image (136).jpg" alt="wilson landscape work" />
-          <img src="./images/image (137).jpg" alt="wilson landscape work" />
-          <img src="./images/image (138).jpg" alt="wilson landscape work" />
-          <img src="./images/image (139).jpg" alt="wilson landscape work" />
-          <img src="./images/image (140).jpg" alt="wilson landscape work" />
-          <img src="./images/image (141).jpg" alt="wilson landscape work" />
-          <img src="./images/image (142).jpg" alt="wilson landscape work" />
-          <img src="./images/image (143).jpg" alt="wilson landscape work" />
-          <img src="./images/image (144).jpg" alt="wilson landscape work" />
-          <img src="./images/image (145).jpg" alt="wilson landscape work" />
-          <img src="./images/image (146).jpg" alt="wilson landscape work" />
-          <img src="./images/image (147).jpg" alt="wilson landscape work" />
-          <img src="./images/image (148).jpg" alt="wilson landscape work" />
-          <img src="./images/image (149).jpg" alt="wilson landscape work" />
-          <img src="./images/image (150).jpg" alt="wilson landscape work" />
-          <img src="./images/image (151).jpg" alt="wilson landscape work" />
-          <img src="./images/image (152).jpg" alt="wilson landscape work" />
-          <img src="./images/image (153).jpg" alt="wilson landscape work" />
-          <img src="./images/image (154).jpg" alt="wilson landscape work" />
-          <img src="./images/image (155).jpg" alt="wilson landscape work" />
-          <img src="./images/image (156).jpg" alt="wilson landscape work" />
-          <img src="./images/image (157).jpg" alt="wilson landscape work" />
-          <img src="./images/image (158).jpg" alt="wilson landscape work" />
-          <img src="./images/image (159).jpg" alt="wilson landscape work" />
-          <img src="./images/image (160).jpg" alt="wilson landscape work" />
-          <img src="./images/image (161).jpg" alt="wilson landscape work" />
-          <img src="./images/image (162).jpg" alt="wilson landscape work" />
-          <img src="./images/image (163).jpg" alt="wilson landscape work" />
-          <img src="./images/image (164).jpg" alt="wilson landscape work" />
-          <img src="./images/image (165).jpg" alt="wilson landscape work" />
-          <img src="./images/image (166).jpg" alt="wilson landscape work" />
-          <img src="./images/image (167).jpg" alt="wilson landscape work" />
-          <img src="./images/image (168).jpg" alt="wilson landscape work" />
-          <img src="./images/image (169).jpg" alt="wilson landscape work" />
-          <img src="./images/image (170).jpg" alt="wilson landscape work" />
-          <img src="./images/image (171).jpg" alt="wilson landscape work" />
-          <img src="./images/image (172).jpg" alt="wilson landscape work" />
-          <img src="./images/image (173).jpg" alt="wilson landscape work" />
-          <img src="./images/image (174).jpg" alt="wilson landscape work" />
-          <img src="./images/image (175).jpg" alt="wilson landscape work" />
-          <img src="./images/image (176).jpg" alt="wilson landscape work" />
-          <img src="./images/image (177).jpg" alt="wilson landscape work" />
-          <img src="./images/image (178).jpg" alt="wilson landscape work" />
-          <img src="./images/image (179).jpg" alt="wilson landscape work" />
-          <img src="./images/image (180).jpg" alt="wilson landscape work" />
-          <img src="./images/image (181).jpg" alt="wilson landscape work" />
-          <img src="./images/image (182).jpg" alt="wilson landscape work" />
-          <img src="./images/image (183).jpg" alt="wilson landscape work" />
-          <img src="./images/image (184).jpg" alt="wilson landscape work" />
-          <img src="./images/image (185).jpg" alt="wilson landscape work" />
+          {images &&
+            images.map(image => {
+              return <ImageCard key={image} image={image} />;
+            })}
         </div>
       </div>
     </div>
