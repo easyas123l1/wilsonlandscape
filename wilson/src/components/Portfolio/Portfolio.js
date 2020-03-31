@@ -18,7 +18,7 @@ export default function Portfolio() {
   return (
     <div className={landscape.background}>
       <div className={landscape.contextDiv}>
-        <h1 className={landscape.header}>Wilson Landscape Portfolio M</h1>
+        <h1 className={landscape.header}>Wilson Landscape Portfolio</h1>
         <div className={landscape.portfolio}>
           {images &&
             images.map(image => {
