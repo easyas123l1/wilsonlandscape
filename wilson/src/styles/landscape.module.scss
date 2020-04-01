@@ -45,7 +45,7 @@
   top: 214px;
   z-index: -1;
   background-color: #ee3135;
-  height: calc(100vh - 214px);
+  height: max-content;
   overflow: auto;
   width: 100%;
   display: flex;
