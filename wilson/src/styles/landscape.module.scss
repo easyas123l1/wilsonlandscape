@@ -104,3 +104,23 @@
   font-size: 2rem;
   text-align: center;
 }
+
+.homeDivide {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: calc(100vh - 214px);
+}
+
+.sideOne {
+  width: 50%;
+  height: max-content;
+  min-height: calc(100vh - 214px);
+  text-align: center;
+}
+
+.image {
+  width: 80%;
+}
