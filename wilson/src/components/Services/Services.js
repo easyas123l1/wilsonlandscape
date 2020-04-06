@@ -29,7 +29,7 @@ export default function Services() {
               Aliqua excepteur cupidatat labore non incididunt adipisicing est
               consectetur excepteur. Est ut est quis elit qui non. Nisi minim
               nulla occaecat aute laborum labore excepteur tempor in nulla
-              aliqua eu. 12, 140, 96
+              aliqua eu. 12, 140, 96 30
             </p>
             <img
               className={landscape.image}
