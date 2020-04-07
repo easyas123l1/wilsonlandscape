@@ -129,6 +129,12 @@
   width: 300px;
 }
 
+.image3 {
+  @media screen and (max-width: 650px) {
+    width: 80%;
+  }
+}
+
 .contact {
   text-align: center;
 }
