@@ -8,7 +8,7 @@ export default function Home() {
         <div className={landscape.homeDivide}>
           <div className={landscape.sideOne}>
             <img
-              className={landscape.image}
+              className={landscape.image3}
               src="https://andersonlandscapemain.com/wp-content/uploads/2018/03/L1.png"
               alt="Wilson Landscape Thumbtack Top Pro 2017"
             />
@@ -32,7 +32,7 @@ export default function Home() {
               aliqua eu. 12, 140, 96
             </p>
             <img
-              className={landscape.image}
+              className={landscape.image3}
               src="https://andersonlandscapemain.com/wp-content/uploads/2012/03/thumbtack-1.png"
               alt="Wilson Landscape Thumbtack Best Of 2016"
             />
