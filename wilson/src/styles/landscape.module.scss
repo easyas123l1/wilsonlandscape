@@ -112,6 +112,9 @@
   flex-direction: row;
   justify-content: center;
   min-height: calc(100vh - 214px);
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
 }
 
 .sideOne {
@@ -119,10 +122,14 @@
   height: max-content;
   min-height: calc(100vh - 214px);
   text-align: center;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    min-height: 100%;
+  }
 }
 
 .image {
-  width: 80%;
+  width: 75%;
 }
 
 .image2 {
